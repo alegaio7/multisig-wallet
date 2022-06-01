@@ -1,5 +1,5 @@
 import Web3 from 'web3';
-import Wallet from './contracts1/Wallet.json';
+import Wallet from './contracts/Wallet.json';
 import detectEthereumProvider from '@metamask/detect-provider';
 
 const getWeb3 = () => {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {getWeb3, getWallet} from './utils.js';
 import Header from './Header.js';
 import NewTransfer from './NewTransfer.js';

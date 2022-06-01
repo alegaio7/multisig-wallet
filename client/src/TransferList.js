@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TransferList({transfers, approveTransfer, currentAccount, listOfApprovals}) {
+function TransferList({transfers, approveTransfer}) {
     return(
         <div>
             <h2>Transfers</h2>
@@ -17,7 +17,6 @@ function TransferList({transfers, approveTransfer, currentAccount, listOfApprova
                 </thead>
                 <tbody>
                     {transfers.map(transfer => {
-                        let button;
                         return (
                             <tr key={transfer.id}>
                                 <td>{transfer.id}</td>
@@ -27,7 +26,7 @@ function TransferList({transfers, approveTransfer, currentAccount, listOfApprova
                                     {transfer.approvals}
                                 </td>
                                 <td>
-                                    {button = <button onClick={() => approveTransfer(transfer.id)}>Approve</button>}
+                                    <button onClick={() => approveTransfer(transfer.id)}>Approve</button>
                                 </td>
                                 <td>{transfer.sent ? 'yes' : 'no'}</td>
                             </tr>
