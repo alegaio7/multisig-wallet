@@ -1,0 +1,4 @@
+.secrets.json
+client/node_modules/
+node_modules/
+kovan deployment.txt
